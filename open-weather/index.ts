@@ -18,8 +18,6 @@ const openWeather: AzureFunction = async function (context: Context, req: HttpRe
     })
 
   } catch (error) {
-
-    console.log(error);
     context.res!.json({
       cod: "400"
     });
